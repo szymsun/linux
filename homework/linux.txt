@@ -1,6 +1,6 @@
 gigakloc🐱GigaKloc:~🗣️ mkdir klocek
 gigakloc🐱GigaKloc:~🗣️ touch klocek/processes.txt
-gigakloc🐱GigaKloc:~🗣️ ls
+gigakloc🐱GigaKloc:~🗣️ ls 
 '2026-07-07 17-41-26.mp4'   Applications               Downloads        Music             Unity
 '2026-07-10 19-08-33.mp4'   arcade-game-1-recreation   gd               Pictures          UnityProjects
 '2026-07-11 10-19-04.mp4'   baller                     humanoid.blend   Public           'Unity user templates'
