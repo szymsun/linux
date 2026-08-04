@@ -1,124 +1,4 @@
-gigakloc🐱GigaKloc:~🗣️ mkdir klocek
-gigakloc🐱GigaKloc:~🗣️ touch klocek/processes.txt
-gigakloc🐱GigaKloc:~🗣️ ls 
-'2026-07-07 17-41-26.mp4'   Applications               Downloads        Music             Unity
-'2026-07-10 19-08-33.mp4'   arcade-game-1-recreation   gd               Pictures          UnityProjects
-'2026-07-11 10-19-04.mp4'   baller                     humanoid.blend   Public           'Unity user templates'
-'2026-07-28 21-23-23.mp4'   Desktop                    idk              PycharmProjects   Videos
-'2026-07-30 22-24-58.mp4'   Documents                  klocek           RiderProjects     xsdfgxccvbxc
- a.out                      dotnet-install.sh          main.cpp         Templates
-gigakloc🐱GigaKloc:~🗣️ cd klocek
-gigakloc🐱GigaKloc:~/klocek🗣️ ls
-processes.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ ps aux >> processes.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ nano processes.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ cp processes.txt copy.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ ls
-copy.txt  processes.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ 
-gigakloc🐱GigaKloc:~/klocek🗣️ nano copy.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ mkdir backup
-gigakloc🐱GigaKloc:~/klocek🗣️ mv copy.txt backup/
-gigakloc🐱GigaKloc:~/klocek🗣️ cd backup
-gigakloc🐱GigaKloc:~/klocek/backup🗣️ ls
-copy.txt
-gigakloc🐱GigaKloc:~/klocek/backup🗣️ cd ..
-gigakloc🐱GigaKloc:~/klocek🗣️ wc
-^C
-gigakloc🐱GigaKloc:~/klocek🗣️ wc processes.txt
-  459  5729 62502 processes.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ ^C
-gigakloc🐱GigaKloc:~/klocek🗣️ wc -l
-^C
-gigakloc🐱GigaKloc:~/klocek🗣️ wc -l processes.txt 
-459 processes.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ wc -l processes.txt >> selected.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ nano selected.txt 
-gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt 
-root         878  0.0  0.0  29568  3396 ?        S<sl 10:15   0:00 /usr/bin/auditd
-dbus         918  0.0  0.0   9852  5092 ?        Ss   10:15   0:00 /usr/bin/dbus-broker-launch --scope system --audit
-root         930  0.0  0.1 381492 54532 ?        Ssl  10:15   0:00 /usr/bin/python3 -sP /usr/bin/firewalld --nofork --nopid
-root         934  0.1  0.0 562620 24932 ?        Ssl  10:15   0:16 /usr/bin/NetworkManager --no-daemon
-root         952  0.0  0.0  10632  6744 ?        Ss   10:15   0:00 /usr/bin/smartd -n -q never --capabilities=mail
-root        1065  0.0  0.0 408180 19044 ?        Ssl  10:15   0:00 /usr/bin/ModemManager
-root        1104  0.0  0.1 874088 50240 ?        Ss   10:15   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
-root        1105  0.0  0.1 874220 50280 ?        Ss   10:15   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
-root        1106  0.0  0.1 874088 32824 ?        Ss   10:15   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
-root        1165  0.0  0.0 253496 11720 ?        Ss   10:15   0:00 /usr/bin/cupsd -l
-root        1166  0.0  0.0 282984  8416 ?        Ssl  10:15   0:00 /usr/bin/gssproxy -i
-root        1167  0.0  0.1 501396 37232 ?        Ssl  10:15   0:02 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
-root        1210  0.0  0.1 500104 35236 ?        Ssl  10:15   0:01 /usr/bin/python3 -Es /usr/sbin/tuned-ppd -l
-root        1323  0.0  0.0 410284 30060 ?        Ssl  10:15   0:00 /usr/bin/plasmalogin
-root        1566  0.0  0.1 340884 33936 ?        S    10:19   0:00 /usr/libexec/plasmalogin-helper --socket /tmp/plasmalogin-auth-cf93ae59-cfb5-462a-a927-064f6ebf4a47 --id 1 --start /usr/libexec/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland --user gigakloc
-gigakloc    1590  0.1  0.0 332548 29116 ?        Ss   10:19   0:23 /opt/appimagelauncher.AppDir/usr/bin/appimagelauncherd
-gigakloc    1595  0.0  0.0   9324  4416 ?        Ss   10:19   0:00 /usr/bin/dbus-broker-launch --scope user
-gigakloc    1600  0.0  0.1 632468 61528 ?        SLl  10:19   0:00 /usr/bin/ksecretd --pam-login 9 10
-gigakloc    1601  0.0  0.1 470088 47300 tty2     Ssl+ 10:19   0:00 /usr/bin/startplasma-wayland
-gigakloc    1888  0.0  0.0 386400 21540 ?        Ssl  10:19   0:00 /usr/bin/kwin_wayland_wrapper --xwayland
-gigakloc    1896  9.6  1.0 2540312 346692 ?      Sl   10:19  24:26 /usr/bin/kwin_wayland --wayland-fd 7 --socket wayland-0 --xwayland-fd 8 --xwayland-fd 9 --xwayland-display :0 --xwayland-xauthority /run/user/1000/xauth_qIUbRn --xwayland
-gigakloc    1903  0.8  0.0 347268 16828 ?        S<sl 10:19   2:01 /usr/bin/pipewire
-gigakloc    1904  0.0  0.1 962224 39300 ?        S<sl 10:19   0:05 /usr/bin/wireplumber
-gigakloc    1968  0.0  0.6 1360832 217816 ?      Sl   10:19   0:02 /usr/bin/plasma-keyboard
-gigakloc    1979  0.0  0.3 427044 125744 ?       S    10:19   0:01 /usr/bin/Xwayland :0 -auth /run/user/1000/xauth_qIUbRn -listenfd 8 -listenfd 9 -displayfd 126 -wm 130 -rootless
-gigakloc    2020  0.0  0.0   9196  4448 ?        S    10:19   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
-gigakloc    2025  0.0  0.1 554636 56300 ?        Ssl  10:19   0:00 /usr/bin/ksmserver
-gigakloc    2027  0.0  0.3 1842756 107572 ?      Ssl  10:19   0:07 /usr/bin/kded6
-gigakloc    2043  1.9  2.0 5253064 655948 ?      Ssl  10:19   4:53 /usr/bin/plasmashell --no-respawn
-gigakloc    2100  0.0  0.0 465548 29252 ?        Ssl  10:19   0:00 /usr/bin/gmenudbusmenuproxy
-gigakloc    2101  0.0  0.1 552656 55864 ?        Ssl  10:19   0:00 /usr/bin/kaccess
-gigakloc    2107  0.0  0.0 462856 28024 ?        Ssl  10:19   0:00 /usr/bin/xembedsniproxy
-gigakloc    2108  0.0  0.0   8880  5484 ?        Ss   10:19   0:00 /usr/bin/ssh-agent -D
-gigakloc    2150  1.1  0.0 423068 18552 ?        S<sl 10:19   2:50 /usr/bin/pipewire-pulse
-gigakloc    2175  0.2  0.1 567068 39652 ?        Ssl  10:19   0:39 /usr/bin/ksystemstats
-gigakloc    2227  0.0  0.0   8324  4824 ?        S    10:19   0:00 /usr/bin/xsettingsd
-gigakloc    2316  0.9  1.5 2279964 499956 ?      Ssl  10:19   2:23 /opt/jetbrains-toolbox/bin/jetbrains-toolbox --minimize
-gigakloc    2326  0.0  0.2 922972 89468 ?        Ssl  10:19   0:03 /usr/bin/deskflow
-gigakloc    2329  0.0  0.0 524936 26004 ?        Ssl  10:19   0:00 /usr/bin/abrt-applet --gapplication-service
-gigakloc    2334  0.0  0.2 1082288 94928 ?       Ssl  10:19   0:03 /usr/bin/kdeconnectd
-gigakloc    2336  0.0  0.4 918452 144916 ?       Ssl  10:19   0:00 /usr/bin/xwaylandvideobridge
-gigakloc    2339  0.0  0.1 762220 58792 ?        Ssl  10:19   0:00 /usr/bin/python3 -Es /usr/bin/seapplet
-gigakloc    2344  0.0  0.0 402552 29496 ?        Ssl  10:19   0:00 /usr/bin/kunifiedpush-distributor
-gigakloc    2345  0.0  0.0 232228  3748 ?        Ss   10:19   0:00 sh /usr/bin/otd-daemon
-gigakloc    2362  0.0  0.3 1149152 118116 ?      Ssl  10:19   0:00 /usr/bin/kalendarac
-gigakloc    2745  0.0  0.1 472644 35088 ?        Sl   10:19   0:04 /usr/bin/deskflow-core server
-gigakloc    2753  0.0  0.1 624732 53160 ?        Ssl  10:19   0:00 /usr/bin/akonadi_control
-gigakloc    2774  0.0  0.1 2668692 49804 ?       Sl   10:19   0:00 /usr/bin/akonadiserver
-gigakloc    2778  0.0  0.2 8592441184 92804 ?    Sl   10:19   0:02 /usr/bin/mysqld --defaults-file=/home/gigakloc/.local/share/akonadi/mysql.conf --datadir=/home/gigakloc/.local/share/akonadi/db_data/ --socket=/run/user/1000/akonadi/mysql.socket --pid-file=/run/user/1000/akonadi/mysql.pid
-gigakloc    2951  0.0  0.3 1151300 118352 ?      Sl   10:19   0:00 /usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent
-gigakloc    2952  0.0  0.1 513080 36248 ?        Sl   10:19   0:00 /usr/bin/akonadi_birthdays_resource --identifier akonadi_birthdays_resource
-gigakloc    2953  0.0  0.1 513428 35284 ?        Sl   10:19   0:00 /usr/bin/akonadi_contacts_resource --identifier akonadi_contacts_resource_0
-gigakloc    2954  0.0  0.1 708416 61788 ?        Sl   10:19   0:00 /usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent
-gigakloc    2955  0.0  0.1 515496 38928 ?        Sl   10:19   0:00 /usr/bin/akonadi_ical_resource --identifier akonadi_ical_resource_0
-gigakloc    2956  0.0  0.1 538204 45348 ?        SNl  10:19   0:00 /usr/bin/akonadi_indexing_agent --identifier akonadi_indexing_agent
-gigakloc    2957  0.0  0.1 529820 42280 ?        Sl   10:19   0:00 /usr/bin/akonadi_maildir_resource --identifier akonadi_maildir_resource_0
-gigakloc    2958  0.0  0.1 707312 61456 ?        Sl   10:19   0:00 /usr/bin/akonadi_maildispatcher_agent --identifier akonadi_maildispatcher_agent
-gigakloc    2959  0.0  0.3 1151420 118428 ?      Sl   10:19   0:00 /usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent
-gigakloc    2960  0.0  0.2 720844 69492 ?        Sl   10:19   0:00 /usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent
-gigakloc    2961  0.0  0.1 706264 60420 ?        Sl   10:19   0:00 /usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent
-gigakloc    2962  0.0  0.2 723108 70384 ?        Sl   10:19   0:00 /usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent
-gigakloc    2963  0.0  0.3 1074124 115296 ?      Sl   10:19   0:00 /usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent
-gigakloc    2964  0.0  0.3 1077660 116908 ?      Sl   10:19   0:00 /usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent
-gigakloc    3034  0.0  0.1 789468 60560 ?        SLsl 10:19   0:00 /usr/bin/kwalletd6
-gigakloc    3176  0.1  0.3 36459332 117180 ?     Sl   10:19   0:20 /home/gigakloc/.local/share/JetBrains/Daemon/bundles/current/jetbrainsd/bin/jetbrainsd run
-gigakloc    3790  0.0  0.0 232228  3976 ?        Ss   10:24   0:00 /bin/bash /usr/bin/brave-browser-stable
-pcscd       4017  0.0  0.0 323020  8068 ?        Ssl  10:24   0:00 /usr/bin/pcscd --foreground --auto-exit
-gigakloc    4067  0.0  0.2 927564 80296 ?        Sl   10:24   0:03 /usr/bin/plasma-browser-integration-host chrome-extension://cimiefiiaegbelhefglklhhakcgmhkai/
-gigakloc    8153  0.0  0.2 643876 70004 ?        Ssl  11:15   0:00 /usr/bin/dolphin --daemon
-gigakloc    8157  0.2  0.3 1891232 123536 ?      Ssl  11:15   0:24 /usr/bin/dolphin --new-window --select /home/gigakloc/Downloads/Linux Command Line Cheat Sheet.pdf
-gigakloc   28201  0.0  0.9 4446092 302860 ?      Ssl  13:32   0:00 /usr/bin/spectacle --dbus
-gigakloc   29244  0.1  1.2 1968736 401724 ?      Ssl  13:41   0:03 /usr/bin/plasma-emojier
-gigakloc   30765  0.1  0.5 753976 189936 ?       Ssl  13:51   0:03 /usr/bin/kitty
-gigakloc   30768  0.0  0.0 2248136 27824 ?       Sl   13:51   0:00 /usr/bin/kitten __atexit__
-gigakloc   30774  0.0  0.0 233804  5860 pts/1    Ss   13:51   0:00 /bin/bash --posix
-gigakloc   30780  0.0  0.0 2100400 28300 ?       Sl   13:51   0:00 /usr/bin/kitten __watch_conf__ 30765 100 /etc/xdg/kitty/kitty.conf /home/gigakloc/.config/kitty/kitty.conf
-gigakloc   31474  3.4  1.0 1860212 357804 ?      Ssl  13:58   1:11 /usr/bin/plasma-systemmonitor
-gigakloc   31485  2.4  0.0 358448 28556 ?        Sl   13:58   0:51 /usr/bin/nvidia-smi dmon -d 2 -s pucm
-gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt >> wc 
-gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt | wc 
-     78     994    9128
-gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt | wc -l
-78
-gigakloc🐱GigaKloc:~/klocek🗣️ history
+gigakloc🐱GigaKloc:~🗣️ history
     1  jetbrainsd/
     2  chmod +x jetbrains-toolbox
     3  sudo chmod +x jetbrains-toolbox
@@ -386,8 +266,8 @@ gigakloc🐱GigaKloc:~/klocek🗣️ history
   265  gpg --list-keys
   266  clear
   267  gpg --list-secret-keys --keyid-format=long
-  268 {klucz}~
-  269  gpg --armor --export {klucz}
+  268  0F21E3E623E91BEF~
+  269  gpg --armor --export 0F21E3E623E91BEF
   270  git config --globaal credential.helper manager
   271  git config --global credential.helper manager
   272  dnf install gcm
@@ -446,25 +326,25 @@ gigakloc🐱GigaKloc:~/klocek🗣️ history
   325  sudo dnf install ./code-1.131.0-1785237908.el8.x86_64.rpm
   326  make --version
   327  clear
-  328  touch file.txt
-  329  rm ./file.txt
+  328  touch nigga.txt
+  329  rm ./nigga.txt
   330  ls
   331  cd ..
-  332  touch file.lol
-  333  cp file.lol not.lol
+  332  touch nigga.lol
+  333  cp nigga.lol bitch.lol
   334  ls
   335  rm *.lol
   336  ls
   337  nano xddd.txt
-  338  cp xddd.txt cat.peep
+  338  cp xddd.txt youbitchass.nigga
   339  ls
-  340  ls *.peep
-  341  rm *.peep
-  342  mkdir points
-  343  cd points/
+  340  ls *.nigga
+  341  rm *.nigga
+  342  mkdir cod_points
+  343  cd cod_points/
   344  cd ..
-  345  rm points/
-  346  rm -d points/
+  345  rm cod_points/
+  346  rm -d cod_points/
   347  ls
   348  mv xddd.txt Documents/
   349  cd Documents/
@@ -582,7 +462,7 @@ gigakloc🐱GigaKloc:~/klocek🗣️ history
   461  echo $ROOT
   462  echo $PATH
   463  echo $ENV
-  464  source .bashrc
+  464  ssh scarea@s42.linuxpl.com -p59184
   465  nano .bashrc
   466  ls -a
   467  nano .bashrc
@@ -616,125 +496,199 @@ gigakloc🐱GigaKloc:~/klocek🗣️ history
   495  source .bashrc
   496  nano .bashrc
   497  source .bashrc
-  498  nano main.cpp
-  499  g++ main.cpp
-  500  chmod +x a.out
-  501  ./a.out
-  502  clear
-  503  mkdir klocek
-  504  touch klocek/processes.txt
-  505  ls
-  506  cd klocek
-  507  ls
-  508  ps aux >> processes.txt
-  509  nano processes.txt
-  510  cp processes.txt copy.txt
-  511  ls
-  512  nano copy.txt
-  513  mkdir backup
-  514  mv copy.txt backup/
-  515  cd backup
-  516  ls
-  517  cd ..
-  518  wc
-  519  wc processes.txt
-  520  wc -l
-  521  wc -l processes.txt 
-  522  wc -l processes.txt >> selected.txt
-  523  nano selected.txt 
-  524  grep /bin processes.txt 
-  525  grep /bin processes.txt >> wc 
-  526  grep /bin processes.txt | wc 
-  527  grep /bin processes.txt | wc -l
-  528  history
-gigakloc🐱GigaKloc:~/klocek🗣️ echo 503
-503
-gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 26
-  505  ls
-  506  cd klocek
-  507  ls
-  508  ps aux >> processes.txt
-  509  nano processes.txt
-  510  cp processes.txt copy.txt
-  511  ls
-  512  nano copy.txt
-  513  mkdir backup
-  514  mv copy.txt backup/
-  515  cd backup
-  516  ls
-  517  cd ..
-  518  wc
-  519  wc processes.txt
-  520  wc -l
-  521  wc -l processes.txt 
-  522  wc -l processes.txt >> selected.txt
-  523  nano selected.txt 
-  524  grep /bin processes.txt 
-  525  grep /bin processes.txt >> wc 
-  526  grep /bin processes.txt | wc 
-  527  grep /bin processes.txt | wc -l
-  528  history
-  529  echo 503
-  530  history | tail -n 26
-gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 28
-  504  touch klocek/processes.txt
-  505  ls
-  506  cd klocek
-  507  ls
-  508  ps aux >> processes.txt
-  509  nano processes.txt
-  510  cp processes.txt copy.txt
-  511  ls
-  512  nano copy.txt
-  513  mkdir backup
-  514  mv copy.txt backup/
-  515  cd backup
-  516  ls
-  517  cd ..
-  518  wc
-  519  wc processes.txt
-  520  wc -l
-  521  wc -l processes.txt 
-  522  wc -l processes.txt >> selected.txt
-  523  nano selected.txt 
-  524  grep /bin processes.txt 
-  525  grep /bin processes.txt >> wc 
-  526  grep /bin processes.txt | wc 
-  527  grep /bin processes.txt | wc -l
-  528  history
-  529  echo 503
-  530  history | tail -n 26
-  531  history | tail -n 28
-gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 30
-  503  mkdir klocek
-  504  touch klocek/processes.txt
-  505  ls
-  506  cd klocek
-  507  ls
-  508  ps aux >> processes.txt
-  509  nano processes.txt
-  510  cp processes.txt copy.txt
-  511  ls
-  512  nano copy.txt
-  513  mkdir backup
-  514  mv copy.txt backup/
-  515  cd backup
-  516  ls
-  517  cd ..
-  518  wc
-  519  wc processes.txt
-  520  wc -l
-  521  wc -l processes.txt 
-  522  wc -l processes.txt >> selected.txt
-  523  nano selected.txt 
-  524  grep /bin processes.txt 
-  525  grep /bin processes.txt >> wc 
-  526  grep /bin processes.txt | wc 
-  527  grep /bin processes.txt | wc -l
-  528  history
-  529  echo 503
-  530  history | tail -n 26
-  531  history | tail -n 28
-  532  history | tail -n 30
-gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 31 >> commands.txt
-gigakloc🐱GigaKloc:~/klocek🗣️ 
+  498  ps
+  499  ps -a
+  500  top
+  501  ps
+  502  ps -a
+  503  kill 31292
+  504  kill -n9 31292
+gigakloc🐱GigaKloc:~🗣️ mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ touch processes.txt
+gigakloc🐱GigaKloc:~🗣️ ps aux >> processes.txt
+gigakloc🐱GigaKloc:~🗣️ cp processes.txt copy.txt
+gigakloc🐱GigaKloc:~🗣️ mkdir backup
+gigakloc🐱GigaKloc:~🗣️ mv copy.txt backup
+gigakloc🐱GigaKloc:~🗣️ wc -l processes.txt
+490 processes.txt
+gigakloc🐱GigaKloc:~🗣️ wc -l processes.txt >> selected.txt
+gigakloc🐱GigaKloc:~🗣️ grep /bin processes.txt >> wc -l
+gigakloc🐱GigaKloc:~🗣️ grep /bin processes.txt  wc -l
+processes.txt
+gigakloc🐱GigaKloc:~🗣️ grep /bin processes.txt | wc -l
+84
+gigakloc🐱GigaKloc:~🗣️ grep "mkdir klocek" history
+grep: history: No such file or directory
+gigakloc🐱GigaKloc:~🗣️ history | grep "mkdir klocek" 
+    2  mkdir klocek
+   13  grep "mkdir klocek" history
+   14  history | grep "mkdir klocek" 
+gigakloc🐱GigaKloc:~🗣️ history | grep -m 1 "mkdir klocek" 
+    2  mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ 
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" | tail
+2:    2  mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" >> tail -n
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" | tail -n
+tail: option requires an argument -- 'n'
+Try 'tail --help' for more information.
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" | tail --n
+tail: unrecognized option '--n'
+Try 'tail --help' for more information.
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" >> tail -n
+higakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek"
+> ^C
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek"
+2:    2  mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ history | tail -n2
+   23  history | grep -n -m 1 "mkdir klocek"
+   24  history | tail -n2
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" >> head -n 
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" | head -n 
+head: option requires an argument -- 'n'
+Try 'head --help' for more information.
+gigakloc🐱GigaKloc:~🗣️ history | grep -n -m 1 "mkdir klocek" | head -n2 
+2:    2  mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ (history | grep -n -m 1 "mkdir klocek" ) | tail -n
+tail: option requires an argument -- 'n'
+Try 'tail --help' for more information.
+gigakloc🐱GigaKloc:~🗣️ (history | grep -n -m 1 "mkdir klocek" ) | tail -n2
+2:    2  mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ (history | grep -n -m 1 "mkdir klocek" ) | tail -n5
+2:    2  mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ history | tail -n2
+   30  (history | grep -n -m 1 "mkdir klocek" ) | tail -n5
+   31  history | tail -n2
+gigakloc🐱GigaKloc:~🗣️ history | tail -n29
+    4  ps aux >> processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup
+    8  wc -l processes.txt
+    9  wc -l processes.txt >> selected.txt
+   10  grep /bin processes.txt >> wc -l
+   11  grep /bin processes.txt  wc -l
+   12  grep /bin processes.txt | wc -l
+   13  grep "mkdir klocek" history
+   14  history | grep "mkdir klocek" 
+   15  history | grep -m 1 "mkdir klocek" 
+   16  history | grep -n -m 1 "mkdir klocek" | tail
+   17  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   18  history | grep -n -m 1 "mkdir klocek" | tail -n
+   19  history | grep -n -m 1 "mkdir klocek" | tail --n
+   20  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   21  history | grep -n -m 1 "mkdir klocek" >> tail -n | bash
+   22  history | grep -n -m 1 "mkdir kl
+   23  history | grep -n -m 1 "mkdir klocek"
+   24* 
+   25  history | grep -n -m 1 "mkdir klocek" >> head -n 
+   26  history | grep -n -m 1 "mkdir klocek" | head -n 
+   27  history | grep -n -m 1 "mkdir klocek" | head -n2 
+   28  (history | grep -n -m 1 "mkdir klocek" ) | tail -n
+   29  (history | grep -n -m 1 "mkdir klocek" ) | tail -n2
+   30  (history | grep -n -m 1 "mkdir klocek" ) | tail -n5
+   31  history | tail -n2
+   32  history | tail -n29
+gigakloc🐱GigaKloc:~🗣️ history | tail -n31
+    3  touch processes.txt
+    4  ps aux >> processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup
+    8  wc -l processes.txt
+    9  wc -l processes.txt >> selected.txt
+   10  grep /bin processes.txt >> wc -l
+   11  grep /bin processes.txt  wc -l
+   12  grep /bin processes.txt | wc -l
+   13  grep "mkdir klocek" history
+   14  history | grep "mkdir klocek" 
+   15  history | grep -m 1 "mkdir klocek" 
+   16  history | grep -n -m 1 "mkdir klocek" | tail
+   17  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   18  history | grep -n -m 1 "mkdir klocek" | tail -n
+   19  history | grep -n -m 1 "mkdir klocek" | tail --n
+   20  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   21  history | grep -n -m 1 "mkdir klocek" >> tail -n | bash
+   22  history | grep -n -m 1 "mkdir kl
+   23  history | grep -n -m 1 "mkdir klocek"
+   24* 
+   25  history | grep -n -m 1 "mkdir klocek" >> head -n 
+   26  history | grep -n -m 1 "mkdir klocek" | head -n 
+   27  history | grep -n -m 1 "mkdir klocek" | head -n2 
+   28  (history | grep -n -m 1 "mkdir klocek" ) | tail -n
+   29  (history | grep -n -m 1 "mkdir klocek" ) | tail -n2
+   30  (history | grep -n -m 1 "mkdir klocek" ) | tail -n5
+   31  history | tail -n2
+   32  history | tail -n29
+   33  history | tail -n31
+gigakloc🐱GigaKloc:~🗣️ history | tail -n33
+    2  mkdir klocek
+    3  touch processes.txt
+    4  ps aux >> processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup
+    8  wc -l processes.txt
+    9  wc -l processes.txt >> selected.txt
+   10  grep /bin processes.txt >> wc -l
+   11  grep /bin processes.txt  wc -l
+   12  grep /bin processes.txt | wc -l
+   13  grep "mkdir klocek" history
+   14  history | grep "mkdir klocek" 
+   15  history | grep -m 1 "mkdir klocek" 
+   16  history | grep -n -m 1 "mkdir klocek" | tail
+   17  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   18  history | grep -n -m 1 "mkdir klocek" | tail -n
+   19  history | grep -n -m 1 "mkdir klocek" | tail --n
+   20  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   21  history | grep -n -m 1 "mkdir klocek" >> tail -n | bash
+   22  history | grep -n -m 1 "mkdir kl
+   23  history | grep -n -m 1 "mkdir klocek"
+   24* 
+   25  history | grep -n -m 1 "mkdir klocek" >> head -n 
+   26  history | grep -n -m 1 "mkdir klocek" | head -n 
+   27  history | grep -n -m 1 "mkdir klocek" | head -n2 
+   28  (history | grep -n -m 1 "mkdir klocek" ) | tail -n
+   29  (history | grep -n -m 1 "mkdir klocek" ) | tail -n2
+   30  (history | grep -n -m 1 "mkdir klocek" ) | tail -n5
+   31  history | tail -n2
+   32  history | tail -n29
+   33  history | tail -n31
+   34  history | tail -n33
+gigakloc🐱GigaKloc:~🗣️ history | tail -n33 >> commands.txt
+gigakloc🐱GigaKloc:~🗣️ cat selected.txt commands.txt
+490 processes.txt
+    3  touch processes.txt
+    4  ps aux >> processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup
+    8  wc -l processes.txt
+    9  wc -l processes.txt >> selected.txt
+   10  grep /bin processes.txt >> wc -l
+   11  grep /bin processes.txt  wc -l
+   12  grep /bin processes.txt | wc -l
+   13  grep "mkdir klocek" history
+   14  history | grep "mkdir klocek" 
+   15  history | grep -m 1 "mkdir klocek" 
+   16  history | grep -n -m 1 "mkdir klocek" | tail
+   17  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   18  history | grep -n -m 1 "mkdir klocek" | tail -n
+   19  history | grep -n -m 1 "mkdir klocek" | tail --n
+   20  history | grep -n -m 1 "mkdir klocek" >> tail -n
+   21  history | grep -n -m 1 "mkdir klocek" >> tail -n | bash
+   22  history | grep -n -m 1 "mkdir kl
+   23  history | grep -n -m 1 "mkdir klocek"
+   24* 
+   25  history | grep -n -m 1 "mkdir klocek" >> head -n 
+   26  history | grep -n -m 1 "mkdir klocek" | head -n 
+   27  history | grep -n -m 1 "mkdir klocek" | head -n2 
+   28  (history | grep -n -m 1 "mkdir klocek" ) | tail -n
+   29  (history | grep -n -m 1 "mkdir klocek" ) | tail -n2
+   30  (history | grep -n -m 1 "mkdir klocek" ) | tail -n5
+   31  history | tail -n2
+   32  history | tail -n29
+   33  history | tail -n31
+   34  history | tail -n33
+   35  history | tail -n33 >> commands.txt
+gigakloc🐱GigaKloc:~🗣️ 
