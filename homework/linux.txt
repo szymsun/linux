@@ -10,7 +10,7 @@ gigakloc🐱GigaKloc:~/tak🗣 mv copy.txt backup/
 gigakloc🐱GigaKloc:~/tak🗣 wc -l processes.txt 
 469 processes.txt
 gigakloc🐱GigaKloc:~/tak🗣 wc -l processes.txt >> selected.txt
-gigakloc🐱GigaKloc:~/tak🗣 grep -r /bin processes.txt >> selected.txt 
+gigakloc🐱GigaKloc:~/tak🗣 grep -r -n /bin processes.txt >> selected.txt 
 gigakloc🐱GigaKloc:~/tak🗣 
 gigakloc🐱GigaKloc:~/tak🗣 less selected.txt 
 gigakloc🐱GigaKloc:~/tak🗣 history | grep "mkdir tak"
