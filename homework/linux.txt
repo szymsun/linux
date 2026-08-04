@@ -1,0 +1,740 @@
+gigakloc🐱GigaKloc:~🗣️ mkdir klocek
+gigakloc🐱GigaKloc:~🗣️ touch klocek/processes.txt
+gigakloc🐱GigaKloc:~🗣️ ls
+'2026-07-07 17-41-26.mp4'   Applications               Downloads        Music             Unity
+'2026-07-10 19-08-33.mp4'   arcade-game-1-recreation   gd               Pictures          UnityProjects
+'2026-07-11 10-19-04.mp4'   baller                     humanoid.blend   Public           'Unity user templates'
+'2026-07-28 21-23-23.mp4'   Desktop                    idk              PycharmProjects   Videos
+'2026-07-30 22-24-58.mp4'   Documents                  klocek           RiderProjects     xsdfgxccvbxc
+ a.out                      dotnet-install.sh          main.cpp         Templates
+gigakloc🐱GigaKloc:~🗣️ cd klocek
+gigakloc🐱GigaKloc:~/klocek🗣️ ls
+processes.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ ps aux >> processes.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ nano processes.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ cp processes.txt copy.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ ls
+copy.txt  processes.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ 
+gigakloc🐱GigaKloc:~/klocek🗣️ nano copy.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ mkdir backup
+gigakloc🐱GigaKloc:~/klocek🗣️ mv copy.txt backup/
+gigakloc🐱GigaKloc:~/klocek🗣️ cd backup
+gigakloc🐱GigaKloc:~/klocek/backup🗣️ ls
+copy.txt
+gigakloc🐱GigaKloc:~/klocek/backup🗣️ cd ..
+gigakloc🐱GigaKloc:~/klocek🗣️ wc
+^C
+gigakloc🐱GigaKloc:~/klocek🗣️ wc processes.txt
+  459  5729 62502 processes.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ ^C
+gigakloc🐱GigaKloc:~/klocek🗣️ wc -l
+^C
+gigakloc🐱GigaKloc:~/klocek🗣️ wc -l processes.txt 
+459 processes.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ wc -l processes.txt >> selected.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ nano selected.txt 
+gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt 
+root         878  0.0  0.0  29568  3396 ?        S<sl 10:15   0:00 /usr/bin/auditd
+dbus         918  0.0  0.0   9852  5092 ?        Ss   10:15   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+root         930  0.0  0.1 381492 54532 ?        Ssl  10:15   0:00 /usr/bin/python3 -sP /usr/bin/firewalld --nofork --nopid
+root         934  0.1  0.0 562620 24932 ?        Ssl  10:15   0:16 /usr/bin/NetworkManager --no-daemon
+root         952  0.0  0.0  10632  6744 ?        Ss   10:15   0:00 /usr/bin/smartd -n -q never --capabilities=mail
+root        1065  0.0  0.0 408180 19044 ?        Ssl  10:15   0:00 /usr/bin/ModemManager
+root        1104  0.0  0.1 874088 50240 ?        Ss   10:15   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
+root        1105  0.0  0.1 874220 50280 ?        Ss   10:15   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
+root        1106  0.0  0.1 874088 32824 ?        Ss   10:15   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
+root        1165  0.0  0.0 253496 11720 ?        Ss   10:15   0:00 /usr/bin/cupsd -l
+root        1166  0.0  0.0 282984  8416 ?        Ssl  10:15   0:00 /usr/bin/gssproxy -i
+root        1167  0.0  0.1 501396 37232 ?        Ssl  10:15   0:02 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+root        1210  0.0  0.1 500104 35236 ?        Ssl  10:15   0:01 /usr/bin/python3 -Es /usr/sbin/tuned-ppd -l
+root        1323  0.0  0.0 410284 30060 ?        Ssl  10:15   0:00 /usr/bin/plasmalogin
+root        1566  0.0  0.1 340884 33936 ?        S    10:19   0:00 /usr/libexec/plasmalogin-helper --socket /tmp/plasmalogin-auth-cf93ae59-cfb5-462a-a927-064f6ebf4a47 --id 1 --start /usr/libexec/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland --user gigakloc
+gigakloc    1590  0.1  0.0 332548 29116 ?        Ss   10:19   0:23 /opt/appimagelauncher.AppDir/usr/bin/appimagelauncherd
+gigakloc    1595  0.0  0.0   9324  4416 ?        Ss   10:19   0:00 /usr/bin/dbus-broker-launch --scope user
+gigakloc    1600  0.0  0.1 632468 61528 ?        SLl  10:19   0:00 /usr/bin/ksecretd --pam-login 9 10
+gigakloc    1601  0.0  0.1 470088 47300 tty2     Ssl+ 10:19   0:00 /usr/bin/startplasma-wayland
+gigakloc    1888  0.0  0.0 386400 21540 ?        Ssl  10:19   0:00 /usr/bin/kwin_wayland_wrapper --xwayland
+gigakloc    1896  9.6  1.0 2540312 346692 ?      Sl   10:19  24:26 /usr/bin/kwin_wayland --wayland-fd 7 --socket wayland-0 --xwayland-fd 8 --xwayland-fd 9 --xwayland-display :0 --xwayland-xauthority /run/user/1000/xauth_qIUbRn --xwayland
+gigakloc    1903  0.8  0.0 347268 16828 ?        S<sl 10:19   2:01 /usr/bin/pipewire
+gigakloc    1904  0.0  0.1 962224 39300 ?        S<sl 10:19   0:05 /usr/bin/wireplumber
+gigakloc    1968  0.0  0.6 1360832 217816 ?      Sl   10:19   0:02 /usr/bin/plasma-keyboard
+gigakloc    1979  0.0  0.3 427044 125744 ?       S    10:19   0:01 /usr/bin/Xwayland :0 -auth /run/user/1000/xauth_qIUbRn -listenfd 8 -listenfd 9 -displayfd 126 -wm 130 -rootless
+gigakloc    2020  0.0  0.0   9196  4448 ?        S    10:19   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+gigakloc    2025  0.0  0.1 554636 56300 ?        Ssl  10:19   0:00 /usr/bin/ksmserver
+gigakloc    2027  0.0  0.3 1842756 107572 ?      Ssl  10:19   0:07 /usr/bin/kded6
+gigakloc    2043  1.9  2.0 5253064 655948 ?      Ssl  10:19   4:53 /usr/bin/plasmashell --no-respawn
+gigakloc    2100  0.0  0.0 465548 29252 ?        Ssl  10:19   0:00 /usr/bin/gmenudbusmenuproxy
+gigakloc    2101  0.0  0.1 552656 55864 ?        Ssl  10:19   0:00 /usr/bin/kaccess
+gigakloc    2107  0.0  0.0 462856 28024 ?        Ssl  10:19   0:00 /usr/bin/xembedsniproxy
+gigakloc    2108  0.0  0.0   8880  5484 ?        Ss   10:19   0:00 /usr/bin/ssh-agent -D
+gigakloc    2150  1.1  0.0 423068 18552 ?        S<sl 10:19   2:50 /usr/bin/pipewire-pulse
+gigakloc    2175  0.2  0.1 567068 39652 ?        Ssl  10:19   0:39 /usr/bin/ksystemstats
+gigakloc    2227  0.0  0.0   8324  4824 ?        S    10:19   0:00 /usr/bin/xsettingsd
+gigakloc    2316  0.9  1.5 2279964 499956 ?      Ssl  10:19   2:23 /opt/jetbrains-toolbox/bin/jetbrains-toolbox --minimize
+gigakloc    2326  0.0  0.2 922972 89468 ?        Ssl  10:19   0:03 /usr/bin/deskflow
+gigakloc    2329  0.0  0.0 524936 26004 ?        Ssl  10:19   0:00 /usr/bin/abrt-applet --gapplication-service
+gigakloc    2334  0.0  0.2 1082288 94928 ?       Ssl  10:19   0:03 /usr/bin/kdeconnectd
+gigakloc    2336  0.0  0.4 918452 144916 ?       Ssl  10:19   0:00 /usr/bin/xwaylandvideobridge
+gigakloc    2339  0.0  0.1 762220 58792 ?        Ssl  10:19   0:00 /usr/bin/python3 -Es /usr/bin/seapplet
+gigakloc    2344  0.0  0.0 402552 29496 ?        Ssl  10:19   0:00 /usr/bin/kunifiedpush-distributor
+gigakloc    2345  0.0  0.0 232228  3748 ?        Ss   10:19   0:00 sh /usr/bin/otd-daemon
+gigakloc    2362  0.0  0.3 1149152 118116 ?      Ssl  10:19   0:00 /usr/bin/kalendarac
+gigakloc    2745  0.0  0.1 472644 35088 ?        Sl   10:19   0:04 /usr/bin/deskflow-core server
+gigakloc    2753  0.0  0.1 624732 53160 ?        Ssl  10:19   0:00 /usr/bin/akonadi_control
+gigakloc    2774  0.0  0.1 2668692 49804 ?       Sl   10:19   0:00 /usr/bin/akonadiserver
+gigakloc    2778  0.0  0.2 8592441184 92804 ?    Sl   10:19   0:02 /usr/bin/mysqld --defaults-file=/home/gigakloc/.local/share/akonadi/mysql.conf --datadir=/home/gigakloc/.local/share/akonadi/db_data/ --socket=/run/user/1000/akonadi/mysql.socket --pid-file=/run/user/1000/akonadi/mysql.pid
+gigakloc    2951  0.0  0.3 1151300 118352 ?      Sl   10:19   0:00 /usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent
+gigakloc    2952  0.0  0.1 513080 36248 ?        Sl   10:19   0:00 /usr/bin/akonadi_birthdays_resource --identifier akonadi_birthdays_resource
+gigakloc    2953  0.0  0.1 513428 35284 ?        Sl   10:19   0:00 /usr/bin/akonadi_contacts_resource --identifier akonadi_contacts_resource_0
+gigakloc    2954  0.0  0.1 708416 61788 ?        Sl   10:19   0:00 /usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent
+gigakloc    2955  0.0  0.1 515496 38928 ?        Sl   10:19   0:00 /usr/bin/akonadi_ical_resource --identifier akonadi_ical_resource_0
+gigakloc    2956  0.0  0.1 538204 45348 ?        SNl  10:19   0:00 /usr/bin/akonadi_indexing_agent --identifier akonadi_indexing_agent
+gigakloc    2957  0.0  0.1 529820 42280 ?        Sl   10:19   0:00 /usr/bin/akonadi_maildir_resource --identifier akonadi_maildir_resource_0
+gigakloc    2958  0.0  0.1 707312 61456 ?        Sl   10:19   0:00 /usr/bin/akonadi_maildispatcher_agent --identifier akonadi_maildispatcher_agent
+gigakloc    2959  0.0  0.3 1151420 118428 ?      Sl   10:19   0:00 /usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent
+gigakloc    2960  0.0  0.2 720844 69492 ?        Sl   10:19   0:00 /usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent
+gigakloc    2961  0.0  0.1 706264 60420 ?        Sl   10:19   0:00 /usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent
+gigakloc    2962  0.0  0.2 723108 70384 ?        Sl   10:19   0:00 /usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent
+gigakloc    2963  0.0  0.3 1074124 115296 ?      Sl   10:19   0:00 /usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent
+gigakloc    2964  0.0  0.3 1077660 116908 ?      Sl   10:19   0:00 /usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent
+gigakloc    3034  0.0  0.1 789468 60560 ?        SLsl 10:19   0:00 /usr/bin/kwalletd6
+gigakloc    3176  0.1  0.3 36459332 117180 ?     Sl   10:19   0:20 /home/gigakloc/.local/share/JetBrains/Daemon/bundles/current/jetbrainsd/bin/jetbrainsd run
+gigakloc    3790  0.0  0.0 232228  3976 ?        Ss   10:24   0:00 /bin/bash /usr/bin/brave-browser-stable
+pcscd       4017  0.0  0.0 323020  8068 ?        Ssl  10:24   0:00 /usr/bin/pcscd --foreground --auto-exit
+gigakloc    4067  0.0  0.2 927564 80296 ?        Sl   10:24   0:03 /usr/bin/plasma-browser-integration-host chrome-extension://cimiefiiaegbelhefglklhhakcgmhkai/
+gigakloc    8153  0.0  0.2 643876 70004 ?        Ssl  11:15   0:00 /usr/bin/dolphin --daemon
+gigakloc    8157  0.2  0.3 1891232 123536 ?      Ssl  11:15   0:24 /usr/bin/dolphin --new-window --select /home/gigakloc/Downloads/Linux Command Line Cheat Sheet.pdf
+gigakloc   28201  0.0  0.9 4446092 302860 ?      Ssl  13:32   0:00 /usr/bin/spectacle --dbus
+gigakloc   29244  0.1  1.2 1968736 401724 ?      Ssl  13:41   0:03 /usr/bin/plasma-emojier
+gigakloc   30765  0.1  0.5 753976 189936 ?       Ssl  13:51   0:03 /usr/bin/kitty
+gigakloc   30768  0.0  0.0 2248136 27824 ?       Sl   13:51   0:00 /usr/bin/kitten __atexit__
+gigakloc   30774  0.0  0.0 233804  5860 pts/1    Ss   13:51   0:00 /bin/bash --posix
+gigakloc   30780  0.0  0.0 2100400 28300 ?       Sl   13:51   0:00 /usr/bin/kitten __watch_conf__ 30765 100 /etc/xdg/kitty/kitty.conf /home/gigakloc/.config/kitty/kitty.conf
+gigakloc   31474  3.4  1.0 1860212 357804 ?      Ssl  13:58   1:11 /usr/bin/plasma-systemmonitor
+gigakloc   31485  2.4  0.0 358448 28556 ?        Sl   13:58   0:51 /usr/bin/nvidia-smi dmon -d 2 -s pucm
+gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt >> wc 
+gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt | wc 
+     78     994    9128
+gigakloc🐱GigaKloc:~/klocek🗣️ grep /bin processes.txt | wc -l
+78
+gigakloc🐱GigaKloc:~/klocek🗣️ history
+    1  jetbrainsd/
+    2  chmod +x jetbrains-toolbox
+    3  sudo chmod +x jetbrains-toolbox
+    4  jetbrains-toolbox
+    5  ./jetbrains-toolbox
+    6  curl -fsS https://dl.brave.com/install.sh | sh
+    7  sudo dnf update
+    8  sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda 
+    9  sudo dnf install kio-admin
+   10  dolphin --sudo
+   11  curl https://www.jetbrains.com/toolbox/app/
+   12  curl https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.5.0.84344.tar.gz?_gl=1*1atoc9g*_gcl_au*NTI2Nzg1MjE4LjE3ODI5ODYwNzg.*FPAU*NTI2Nzg1MjE4LjE3ODI5ODYwNzg.*_ga*NDUxNTg2MDIuMTc4Mjk4NjA3NA..*_ga_9J976DJZ68*czE3ODI5ODYwNzMkbzEkZzEkdDE3ODI5ODYyNTAkajQ2JGwwJGgw
+   13  sudo dnf install warp-terminal
+   14  sudo dnf install ./warp-terminal-v0.2026.06.24.09.19.stable_03-1.x86_64
+   15  sudo dnf install ./
+   16  sudo dnf install  "./warp-terminal-v0.2026.06.24.09.19.stable_03-1.x86_64 (1).rpm"
+   17  sudo dnf install p7zip   
+   18  7z'
+   19  7z
+   20  dolphin 
+   21  ls
+   22  cd Downloads/
+   23  ls
+   24  sudo dnf install ./appimagelauncher_3.0.0-beta-2-gha287.96cb937_x86_64.rpm 
+   25  sudo dnf install ./opentabletdriver-0.6.7-1.x86_64.rpm 
+   26   sudo dracut --regenerate-all --force
+   27  systemctl --user enable opentabletdriver.service --now
+   28  echo $XDG_SESSION_TYPE~
+   29  echo $XDG_SESSION_TYPE
+   30  cd .local/share/applications/
+   31  ls
+   32  nano appimagekit_740a4fc6cb650722a66a5e353315eb19-osu_.desktop 
+   33  flatpak install flathub com.discordapp.Discord
+   34  sudo dnf install steam
+   35  steam
+   36  top
+   37  steam
+   38  flatpak install flathub org.prismlauncher.PrismLauncher
+   39  fastfetch
+   40  clear
+   41  fastfetch
+   42  flatpak install flathub com.usebottles.bottles
+   43  sudo dnf install mcpelauncher-manifest mcpelauncher-ui-manifest msa-manifest
+   44  scrcpy
+   45  sudo dnf install scrcpy
+   46  sudo dnf install android-tools   
+   47  scrcpy
+   48  sudo dnf copr enable zeno/scrcpy && sudo dnf install scrcpy
+   49  scrpy
+   50  scrcpy
+   51  adb
+   52  adb devices
+   53  adbb start-server
+   54  adb start-server
+   55  adb connect 192.168.8.182:38861
+   56  adb connect 192.168.8.182:44825
+   57  adb connect 192.168.8.182:35969
+   58  adb connect 192.168.8.182:34497
+   59  adb connect 192.168.8.182:44131
+   60  adb devices 
+   61  adb connect 192.168.8.182:44131 
+   62  adb connect 192.168.8.182:46019
+   63  adb pair 192.168.8.182:39979 953358
+   64  scrcpy
+   65  adb devices
+   66  adb pair 192.168.8.182:39979 953358
+   67  adb connect 192.168.8.182:46019
+   68  adb devices
+   69  fastfetch
+   70  systemctl --user restart pipewire pipewire-pulse wireplumber   
+   71  clang
+   72  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+   73  flatpak install flathub com.usebottles.bottles
+   74  pactl list
+   75  nano ~/.config/pipewire/pipewire.conf.d/pwsink.conf
+   76  cd .config/
+   77  ls
+   78  cd pipewire
+   79  mkdir pipewire
+   80  cd pipewire/
+   81  mkdir pipewiere.conf.d
+   82  cd pipewiere.conf.d/
+   83  nano cspwsink.conf
+   84  pactl load-module module-null-sink sink_name=MyVirtualSink sink_properties=device.description="Virtual_Output"   
+   85  kitteh
+   86  config
+   87  quit
+   88  exitg
+   89  exit
+   90  kitty
+   91  # Shared Settings
+   92  #
+   93  # Font settings
+   94  font_family DankMono Nerd Font
+   95  bold_font auto
+   96  italic_font auto
+   97  bold_italic_font auto
+   98  font_size 15.0
+   99  adjust_line_height 100%
+  100  font_features none
+  101  # Cursor settings
+  102  cursor_blink_interval 0
+  103  # Window decorations
+  104  # Set to "no" to display a top bar for dragging and moving the window
+  105  # Use "smart" to hide decorations when maximized but show in windowed mode
+  106  hide_window_decorations no
+  107  # Miscellaneous settings
+  108  # Enable option key as Alt on macOS
+  109  macos_option_as_alt yes
+  110  # Set scrollback lines maximum
+  111  scrollback_lines 1000000
+  112  # Copy on select
+  113  # Automatically copy text to the clipboard when selected
+  114  copy_on_select yes
+  115  # Theme settings
+  116  # Include theme configuration
+  117  oh shit
+  118  sudo dnf install wl-clipboard clipboard-sync xclip
+  119  flatpak install flathub org.kde.krita
+  120  curl -fsSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
+  121  chmod +x dotnet-install.sh
+  122  ./dotnet-install.sh --version 10.0.201
+  123  nano ~/.bashrc
+  124  sh
+  125  dotnet
+  126  dotnet --list-sdks
+  127  dotnet --version
+  128  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  129  load-module module-alsa-sink device=@DEFAULT_SINK@   
+  130  nano godots.desktop
+  131  sudo mv godots.desktop /usr/share/applications/   
+  132  nano godot_mono_4.7.desktop
+  133  sudo mv godot_mono_4.7.desktop /usr/share/applications/   
+  134  mv godot_mono_4.7.desktop ~/.local/share/applications/   
+  135  sudo dnf update
+  136  sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+  137  sudo dnf groupupdate sound-and-video   
+  138  sudo dnf install ffmpeg   
+  139  sudo dnf install vlc
+  140  sudo dnf install mpv   
+  141  flatpak install org.videolan.VLC
+  142  flatpak override org.prismlauncher.PrismLauncher --filesystem=host
+  143  sudo flatpak override org.prismlauncher.PrismLauncher --filesystem=host
+  144  otd
+  145  ./dotnet-install.sh --version 8.0.0
+  146  sudo dnf install dotnet8
+  147  sudo dnf install dotnet-sdk-8
+  148  sudo dnf install dotnet-runtime-8.0
+  149  otd
+  150  sudo dnf install dotnet-sdk-8.0
+  151  otd
+  152  ./dotnet-install.sh --version 8.0.0
+  153  ./dotnet-install.sh --version 8
+  154  ./dotnet-install.sh --channel 8.0
+  155  otd
+  156  cd /usr
+  157  cd local/
+  158  cd ..
+  159  cd share/
+  160  cd applications/
+  161  ls
+  162  nano blender.desktop
+  163  sudo nano blender.desktop
+  164  cd Downloads/
+  165  ls
+  166  sudo tar -xf blender-5.1.2-linux-x64.tar.xz -C /opt/  
+  167  cd /
+  168  ls
+  169  cd opt
+  170  cd blender-5.1.2-linux-x64/
+  171  ls
+  172  nano blender.desktop 
+  173  cd ..
+  174  mv blender-5.1.2-linux-x66 blender
+  175  sudo mv blender-5.1.2-linux-x66/ blender/
+  176  ls
+  177  sudo mv ./blender-5.1.2-linux-x64/ ./blender
+  178  ls
+  179  dotnet restore
+  180  dotnet workload restore
+  181  dotnet restore
+  182  dotnet --version
+  183  cd RiderProjects/
+  184  cd fork-in-the-road/
+  185  dotnet restore
+  186  dotnet --list-skds
+  187  dotnet --list-sdks
+  188  sudo dnf install git-lfs
+  189  adb
+  190  adb devices
+  191  adb list
+  192  chmod +x install-reaper.sh 
+  193  sudo install-reaper.sh
+  194  sudo ./install-reaper.sh
+  195  reaper
+  196  sudo dnf install ./surge-xt-x86_64-1.3.4.rpm
+  197  surge-xt-cli 
+  198  sudo dnf install wine-staging
+  199  sudo dnf config-manager addrepo --from-repofile=https://dl.winehq.org/wine-builds/fedora/44/winehq.repo
+  200  sudo dnf install wine-staging
+  201  sudo dnf install winehq-staging
+  202  sudo dnf copr enable patrickl/wine-tkg -y
+  203  sudo dnf install yabridge yabridgectl
+  204   sudo dnf remove wine.i386 wine.x86_64 wine-core.x86_64 wine-core.i386 wine-filesystem wine-mono-bin wine-dxvk
+  205  sudo dnf install yabridge yabridgectl
+  206  sudo dnf remove winehq-staging wine-staging wine-staging-common wine-staging-amd64 wine-staging-i386
+  207  sudo dnf install yabridge yabridgectl
+  208  yabridge
+  209  yabridge status
+  210  yabridgectl st
+  211  yabridgectl statys
+  212  yabridgectl status
+  213  bottles
+  214  adb
+  215  adb pair 192.168.8.179:35481
+  216  adb devices
+  217  adb list
+  218  adb connect 192.168.8.179:34097
+  219  scrcpy 
+  220  adb pair 192.168.8.179:38937
+  221  adb connect 192.168.8.179:38503
+  222  scrcpy 
+  223  adb restart
+  224  adb kill-server 
+  225  adb start-server 
+  226  adb connect 192.168.8.179:38503
+  227  scrcpy 
+  228  sudo sh -c 'echo -e "[unityhub]\nname=Unity Hub\nbaseurl=https://hub.unity3d.com/linux/repos/rpm/stable\nenabled=1\ngpgcheck=1\ngpgkey=https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key\nrepo_gpgcheck=1" > /etc/yum.repos.d/unityhub.repo'
+  229  sudo dnf check-update
+  230  sudo dnf install unityhub
+  231  sudo dnf install unityhub -y
+  232  sudo dnf install ./deskflow-1.26.0-fedora-43-x86_64.rpm
+  233  cd Unity
+  234  cd ..
+  235  cd UnityProjects/
+  236  git clone https://github.com/AlexRak2/Coop-Party-Template-Unity-Mirror-Steam.git
+  237  adb devices
+  238  adb pair 192.168.8.188:40889 29970
+  239  adb pair 192.168.8.188:40889 
+  240  adb devices
+  241  reboot
+  242  git push
+  243  git push origin/main
+  244  git push -u origin main 
+  245  git lfs track "*.wav"
+  246  git lfs track "*.blend"
+  247  git lfs list
+  248  git lfs --help
+  249  git lfs ls-files
+  250  git lfs track
+  251  gh
+  252  gh aauth
+  253  gh auth
+  254  gh auth login
+  255  git lfs
+  256  git lfs install
+  257  gpg
+  258  moveAction = InputSystem.actions.FindAction("Move");
+  259          
+  260          _sprintAction = InputSystem.actions.FindAction("Sprint"
+  261  _moveAction = InputSystem.actions.FindAction("Move");
+  262          
+  263          _sprintAction = InputSystem.actions.FindAction("Sprint"
+  264  gpg --full-generate-key
+  265  gpg --list-keys
+  266  clear
+  267  gpg --list-secret-keys --keyid-format=long
+  268 {klucz}~
+  269  gpg --armor --export {klucz}
+  270  git config --globaal credential.helper manager
+  271  git config --global credential.helper manager
+  272  dnf install gcm
+  273  sudo dnf install git-credential-libsecret
+  274  git config --global credential.helper libsecret
+  275  pip install pycord
+  276  pip remove pycord
+  277  pip uninstall pycord
+  278  pip install py-cord
+  279  pwd
+  280  cd 
+  281  ls
+  282  cd Desktop
+  283  ls
+  284  sudo dnf install ./asmacro-0.1.0-1.x86_64.rpm
+  285  sudo usermod -aG input
+  286  sudo usermod -a -G input
+  287  sudo usermod -aG input gigakloc
+  288  asmacro 
+  289  fastfetch
+  290  flatpak override --user --device=input org.vinegarhq.Sober
+  291  flatpak run org.vinegarhq.Sober
+  292  flatpak install flathub org.vinegarhq.Sober
+  293  sudo dnf install gamemode
+  294  gamemode
+  295  gamemoderun
+  296  systemctl poweroff
+  297  ls
+  298  sudo dnf install ./VirtualBox-7.2-7.2.14_174565_fedora40-1.x86_64.rpm
+  299  sudo usermod -a -G vboxusers gigakloc
+  300  exit
+  301  exit
+  302  groups gigakloc
+  303  clear
+  304  cls
+  305  clang
+  306  clear
+  307  pwd
+  308  ls
+  309  sudo dnf install g++ clang
+  310  pwd
+  311  ls
+  312  clear
+  313  sudo dnf install vscode
+  314  cd Downloads/
+  315  ls
+  316  ls "*.rpm"
+  317  ls -f "*.rpm"
+  318  cd /opt
+  319  ls
+  320  cd ~
+  321  cd -
+  322  cd ~
+  323  clear
+  324  cd Downloads
+  325  sudo dnf install ./code-1.131.0-1785237908.el8.x86_64.rpm
+  326  make --version
+  327  clear
+  328  touch file.txt
+  329  rm ./file.txt
+  330  ls
+  331  cd ..
+  332  touch file.lol
+  333  cp file.lol not.lol
+  334  ls
+  335  rm *.lol
+  336  ls
+  337  nano xddd.txt
+  338  cp xddd.txt cat.peep
+  339  ls
+  340  ls *.peep
+  341  rm *.peep
+  342  mkdir points
+  343  cd points/
+  344  cd ..
+  345  rm points/
+  346  rm -d points/
+  347  ls
+  348  mv xddd.txt Documents/
+  349  cd Documents/
+  350  ls
+  351  rm xddd.txt
+  352  cd ..
+  353  cd Downloads
+  354  ls
+  355  clear
+  356  ls -l *.rpm
+  357  rm *.rpm
+  358  ls -l *.crdownload
+  359  rm *.crdownload
+  360  ls
+  361  nano /etc/skel/.bashrc
+  362  nano bashrc
+  363  nano .bashrc
+  364  source .bashrc
+  365  fetch
+  366  fastfetch
+  367  man fastfetch
+  368  nano .bashrc
+  369  source .bashrc
+  370  cd Downloads
+  371  find *.pdf
+  372  man find
+  373  man find *.pdf | head -n 2
+  374  man find "*.pdf" | head -n 2
+  375  find "*.pdf" | head -n 2
+  376  find . "*.pdf" | head -n 2
+  377  find ."*.pdf" | head -n 2
+  378  find *.pdf | head -n 2
+  379  find *.pdf | head -n 3
+  380  ls ..
+  381  cd /
+  382  find g++
+  383  find / g++
+  384  find / -iname sth
+  385  sudo find / -iname sth
+  386  man find 
+  387  grep g++
+  388  grep .desktop
+  389  grep ;
+  390  grep ~ export
+  391  grep /home/gigakloc/ export
+  392  grep main .
+  393  grep main *
+  394  cd ~
+  395  grep main namespace 
+  396  grep main . namespace 
+  397  grep . namespace 
+  398  grep main namespace 
+  399  grep main *
+  400  grep namespace *
+  401  cd Pycharm
+  402  cd PycharmProjects/
+  403  ls
+  404  cd AwaBot/
+  405  grep -rn import *
+  406  htop
+  407  top
+  408  ps
+  409  ps -a
+  410  ps -A
+  411  ps -Aux
+  412  ps -AUX
+  413  ps -A -u-x
+  414  ps -A -u -x
+  415  ps -Au
+  416  ps -Au *
+  417  ps * -Au *
+  418  ps * -Au
+  419  clear
+  420  ps au
+  421  ps aux
+  422  clear
+  423  top
+  424  clear
+  425  mkdir do_skopiowania
+  426  cd do_skopiowania/
+  427  touch to
+  428  touch jest
+  429  touch to
+  430  ls
+  431  touch dobre
+  432  ls
+  433  cd //
+  434  cd -
+  435  cd ..
+  436  man cp
+  437  cp --copy-contents do_skopiowania/ skopiowane
+  438  cp --copy-contents -r do_skopiowania/ skopiowane
+  439  cd skopiowane/
+  440  ls
+  441  cd ..
+  442  rm -rf do_skopiowania/ skopiowane/
+  443  ls
+  444  cp -hx
+  445  cp --help -x
+  446  clear
+  447  cat .bashrc
+  448  ;s
+  449  echo PATH
+  450  echo "PATH"
+  451  echo systemctl
+  452  echo pwd
+  453  echo ~
+  454  echo $PATH
+  455  less .bashrc
+  456  man wc
+  457  echo wahhhhhhh
+  458  echo ~
+  459  echo $DOTNET
+  460  echo $DOTNETPATH
+  461  echo $ROOT
+  462  echo $PATH
+  463  echo $ENV
+  464  source .bashrc
+  465  nano .bashrc
+  466  ls -a
+  467  nano .bashrc
+  468  source .bashrc
+  469  nano .bashrc
+  470  source .bashrc
+  471  nano .bashrc
+  472  source .bashrc
+  473  nano .bashrc
+  474  source .bashrc
+  475  nano .bashrc
+  476  source .bashrc
+  477  nano .bashrc
+  478  source .bashrc
+  479  nano .bashrc
+  480  source .bashrc
+  481  nano .bashrc
+  482  source .bashrc
+  483  nano .bashrc
+  484  source .bashrc
+  485  nano .bashrc
+  486  source .bashrc
+  487  nano .bashrc
+  488  source .bashrc
+  489  clear
+  490  nano .bashrc
+  491  source .bashrc
+  492  nano .bashrc
+  493  source .bashrc
+  494  nano .bashrc
+  495  source .bashrc
+  496  nano .bashrc
+  497  source .bashrc
+  498  nano main.cpp
+  499  g++ main.cpp
+  500  chmod +x a.out
+  501  ./a.out
+  502  clear
+  503  mkdir klocek
+  504  touch klocek/processes.txt
+  505  ls
+  506  cd klocek
+  507  ls
+  508  ps aux >> processes.txt
+  509  nano processes.txt
+  510  cp processes.txt copy.txt
+  511  ls
+  512  nano copy.txt
+  513  mkdir backup
+  514  mv copy.txt backup/
+  515  cd backup
+  516  ls
+  517  cd ..
+  518  wc
+  519  wc processes.txt
+  520  wc -l
+  521  wc -l processes.txt 
+  522  wc -l processes.txt >> selected.txt
+  523  nano selected.txt 
+  524  grep /bin processes.txt 
+  525  grep /bin processes.txt >> wc 
+  526  grep /bin processes.txt | wc 
+  527  grep /bin processes.txt | wc -l
+  528  history
+gigakloc🐱GigaKloc:~/klocek🗣️ echo 503
+503
+gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 26
+  505  ls
+  506  cd klocek
+  507  ls
+  508  ps aux >> processes.txt
+  509  nano processes.txt
+  510  cp processes.txt copy.txt
+  511  ls
+  512  nano copy.txt
+  513  mkdir backup
+  514  mv copy.txt backup/
+  515  cd backup
+  516  ls
+  517  cd ..
+  518  wc
+  519  wc processes.txt
+  520  wc -l
+  521  wc -l processes.txt 
+  522  wc -l processes.txt >> selected.txt
+  523  nano selected.txt 
+  524  grep /bin processes.txt 
+  525  grep /bin processes.txt >> wc 
+  526  grep /bin processes.txt | wc 
+  527  grep /bin processes.txt | wc -l
+  528  history
+  529  echo 503
+  530  history | tail -n 26
+gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 28
+  504  touch klocek/processes.txt
+  505  ls
+  506  cd klocek
+  507  ls
+  508  ps aux >> processes.txt
+  509  nano processes.txt
+  510  cp processes.txt copy.txt
+  511  ls
+  512  nano copy.txt
+  513  mkdir backup
+  514  mv copy.txt backup/
+  515  cd backup
+  516  ls
+  517  cd ..
+  518  wc
+  519  wc processes.txt
+  520  wc -l
+  521  wc -l processes.txt 
+  522  wc -l processes.txt >> selected.txt
+  523  nano selected.txt 
+  524  grep /bin processes.txt 
+  525  grep /bin processes.txt >> wc 
+  526  grep /bin processes.txt | wc 
+  527  grep /bin processes.txt | wc -l
+  528  history
+  529  echo 503
+  530  history | tail -n 26
+  531  history | tail -n 28
+gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 30
+  503  mkdir klocek
+  504  touch klocek/processes.txt
+  505  ls
+  506  cd klocek
+  507  ls
+  508  ps aux >> processes.txt
+  509  nano processes.txt
+  510  cp processes.txt copy.txt
+  511  ls
+  512  nano copy.txt
+  513  mkdir backup
+  514  mv copy.txt backup/
+  515  cd backup
+  516  ls
+  517  cd ..
+  518  wc
+  519  wc processes.txt
+  520  wc -l
+  521  wc -l processes.txt 
+  522  wc -l processes.txt >> selected.txt
+  523  nano selected.txt 
+  524  grep /bin processes.txt 
+  525  grep /bin processes.txt >> wc 
+  526  grep /bin processes.txt | wc 
+  527  grep /bin processes.txt | wc -l
+  528  history
+  529  echo 503
+  530  history | tail -n 26
+  531  history | tail -n 28
+  532  history | tail -n 30
+gigakloc🐱GigaKloc:~/klocek🗣️ history | tail -n 31 >> commands.txt
+gigakloc🐱GigaKloc:~/klocek🗣️ 
